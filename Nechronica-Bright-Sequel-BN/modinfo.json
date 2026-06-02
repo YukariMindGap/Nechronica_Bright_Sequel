@@ -1,9 +1,9 @@
 {
   "type": "MOD_INFO",
-  "ident": "Nechronica_Redux",
-  "name": "Nechronica Redux",
+  "ident": "Nechronica_Bright_Sequel",
+  "name": "Nechronica: Bright Sequel",
   "authors": [ "YukariMindGap" ],
-  "description": "MODIFIED by YukariMindGap from Malkeus: Add items, mutations and enemies appearing in Nechronica: the Long Long Sequel.",
+  "description": "Remake of a Fork from Malkeus' Mod: Add items, mutations and enemies from the Zombie Doll TTRPG Nechronica: the Long Long Sequel.",
   "category": "content",
-  "dependencies": ["dda"]
+  "dependencies": ["bn"]
 }
