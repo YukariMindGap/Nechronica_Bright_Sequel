@@ -4,7 +4,7 @@
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
     "name": { "str": "necromantic serum" },
-    "description": "A super-concentrated mutagen that resembles a liquified corpse. You need a syringe to inject it...  if you really want to?",
+    "description": "A concentrated mutagenic substance. It's dark and viscous, with a thick, sticky consistency. You'll need a syringe if you intend to use it...",
     "color": "dark_gray",
     "use_action": { "type": "mutagen_iv", "mutation_category": "NECROMANTIC" }
   },

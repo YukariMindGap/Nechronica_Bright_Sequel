@@ -1,18 +1,14 @@
 [
   {
     "type": "dream",
-    "messages": [
-      "In your dream, your body got cut, but you didn't consider it a problem.",
-      "You had a dream where something was wriggling inside your body."
-    ],
+    "messages": [ "In your dream, your body was cut open—but you felt no alarm. You dreamed of something writhing inside your body." ],
     "category": "NECROMANTIC",
     "strength": 1
   },
   {
     "type": "dream",
     "messages": [
-      "In your dream, you were reconnecting your dismembered arms.",
-      "A big hole opened in your face as you looked in the mirror ... .... Ah, it was just a dream."
+      "In your dream, you were reattaching your torn-off arm. When you looked in the mirror, there was a gaping hole in your face... ... Ah, it was only a dream. What a relief."
     ],
     "category": "NECROMANTIC",
     "strength": 2
@@ -20,8 +16,7 @@
   {
     "type": "dream",
     "messages": [
-      "You had such a strange and crisp dream, that you were embracing your own head.",
-      "You had a terrifying dream where someone was doing a transplant on something not human."
+      "You had a strange, vivid dream of being held by your own head. You dreamed of a terrifying scene—something inhuman being transplanted into you by an unknown entity."
     ],
     "category": "NECROMANTIC",
     "strength": 3
@@ -29,8 +24,7 @@
   {
     "type": "dream",
     "messages": [
-      "In your dream, you were spoken to by an unknown person who is right next to you. When you turn you notice their head is connected to your body.",
-      "I woke up from a dream where I was packing my own torn-out intestines back into my body. Maybe I should stop packing weird things into myself."
+      "In your dream, a stranger spoke to you from beside your face. Below the neck, everything was connected to your own body... You woke from a dream of stuffing your torn guts back into yourself. Maybe you should stop putting weird things inside you."
     ],
     "category": "NECROMANTIC",
     "strength": 4

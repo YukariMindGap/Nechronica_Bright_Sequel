@@ -2,9 +2,10 @@
   {
     "type": "mutation_category",
     "id": "NECROMANTIC",
-    "name": { "ctxt": "mutation category", "str": "Undead" },
+    "name": { "str": "Necromantic" },
     "threshold_mut": "THRESH_NECROMANTIC",
     "mutagen_message": "Your heart slows down for a beat.",
+    "memorial_message": "Failed to realize their full potential.",
     "iv_message": "You feel that all your pain is gone for a moment."
   }
 ]
