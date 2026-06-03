@@ -13,23 +13,14 @@
     "looks_like": "briefcase",
     "symbol": "[",
     "color": "white",
-    "covers": [ "arm_l", "arm_r", "hand_l", "hand_r" ],
+    "covers": [ "arm_either", "hand_either" ],
     "sided": true,
     "coverage": 50,
     "encumbrance": 30,
-    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-        "rigid": true,
-        "max_contains_volume": "15 L",
-        "max_contains_weight": "30 kg",
-        "max_item_length": "50 cm",
-        "moves": 200
-      }
-    ],
+    "storage": "15 L",
     "material_thickness": 2,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "WATER_FRIENDLY", "STURDY", "OVERSIZE", "BELTED", "RESTRICT_HANDS", "DURABLE_MELEE" ]
+    "flags": [ "WATER_FRIENDLY", "STURDY", "BELTED", "RESTRICT_HANDS", "DURABLE_MELEE" ]
   },
   {
     "id": "nec_coffin",
@@ -47,19 +38,10 @@
     "covers": [ "torso" ],
     "coverage": 50,
     "encumbrance": 35,
-    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-        "rigid": true,
-        "max_contains_volume": "57500 ml",
-        "max_contains_weight": "50 kg",
-        "max_item_length": "140 cm",
-        "moves": 300
-      }
-    ],
+    "storage": "57500 ml",
     "material_thickness": 3,
     "techniques": [ "WBLOCK_3" ],
-    "flags": [ "WATER_FRIENDLY", "STURDY", "BELTED", "OVERSIZE", "DURABLE_MELEE" ]
+    "flags": [ "WATER_FRIENDLY", "STURDY", "BELTED", "DURABLE_MELEE" ]
   },
   {
     "id": "nec_ribbon",
@@ -145,47 +127,8 @@
     "encumbrance": 18,
     "warmth": 25,
     "material_thickness": 4,
-    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-        "holster": true,
-        "min_item_volume": "1000 ml",
-        "max_contains_volume": "8 L",
-        "max_contains_weight": "8200 g",
-        "max_item_length": "1200 mm",
-        "moves": 150
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "max_contains_volume": "1500 ml",
-        "max_contains_weight": "5 kg",
-        "max_item_length": "20 cm",
-        "moves": 80
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "max_contains_volume": "1500 ml",
-        "max_contains_weight": "5 kg",
-        "max_item_length": "20 cm",
-        "moves": 80
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "max_contains_volume": "1500 ml",
-        "max_contains_weight": "5 kg",
-        "max_item_length": "20 cm",
-        "moves": 80
-      },
-      {
-        "pocket_type": "CONTAINER",
-        "max_contains_volume": "1500 ml",
-        "max_contains_weight": "5 kg",
-        "max_item_length": "20 cm",
-        "moves": 80
-      }
-    ],
-    "use_action": { "type": "holster" },
-    "flags": [ "VARSIZE", "SUPER_FANCY", "OVERSIZE", "WATERPROOF", "RAINPROOF", "STURDY", "POCKETS" ]
+    "storage": "11 L",
+    "flags": [ "VARSIZE", "SUPER_FANCY", "WATERPROOF", "RAINPROOF", "STURDY", "POCKETS" ]
   },
   {
     "id": "nec_panier",
@@ -201,8 +144,8 @@
     "covers": [ "leg_l", "leg_r" ],
     "warmth": 5,
     "encumbrance": 5,
-    "volume": 1,
-    "flags": [ "OVERSIZE" ],
+    "volume": "250 ml",
+    "flags": [  ],
     "material_thickness": 1
   }
 ]

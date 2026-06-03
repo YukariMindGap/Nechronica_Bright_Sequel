@@ -141,11 +141,6 @@
   },
   {
     "type": "item_group",
-    "id": "hatstore_accessories",
-    "items": [ [ "nec_ribbon", 10 ] ]
-  },
-  {
-    "type": "item_group",
     "id": "mut_lab",
     "items": [ [ "iv_mutagen_necromancy", 2 ], [ "NEC_recipe_necromancy", 3 ] ]
   },

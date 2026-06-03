@@ -47,7 +47,6 @@
   {
     "type": "martial_art",
     "copy-from": "style_niten",
-    "id": "style_niten",
     "extend": { "weapons": [ "nec_fine_katana" ] }
   }
 ]

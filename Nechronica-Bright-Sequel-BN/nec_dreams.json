@@ -5,7 +5,7 @@
       "In your dream, your body got cut, but you didn't consider it a problem.",
       "You had a dream where something was wriggling inside your body."
     ],
-    "category": "MUTCAT_NECROMANCY",
+    "category": "NECROMANTIC",
     "strength": 1
   },
   {
@@ -14,7 +14,7 @@
       "In your dream, you were reconnecting your dismembered arms.",
       "A big hole opened in your face as you looked in the mirror ... .... Ah, it was just a dream."
     ],
-    "category": "MUTCAT_NECROMANCY",
+    "category": "NECROMANTIC",
     "strength": 2
   },
   {
@@ -23,7 +23,7 @@
       "You had such a strange and crisp dream, that you were embracing your own head.",
       "You had a terrifying dream where someone was doing a transplant on something not human."
     ],
-    "category": "MUTCAT_NECROMANCY",
+    "category": "NECROMANTIC",
     "strength": 3
   },
   {
@@ -32,7 +32,7 @@
       "In your dream, you were spoken to by an unknown person who is right next to you. When you turn you notice their head is connected to your body.",
       "I woke up from a dream where I was packing my own torn-out intenstines back into my body. Maybe I should stop packing weird things into myself."
     ],
-    "category": "MUTCAT_NECROMANCY",
+    "category": "NECROMANTIC",
     "strength": 4
   }
 ]

@@ -97,7 +97,7 @@
     "name": "Gothic Doll",
     "description": "You are a doll, a result of occult reanimation on human corpses. You were designed to hunt down the other undead and devour them.",
     "points": 2,
-    "traits": [ "EATDEAD", "CANNIBAL", "FLIMSY", "FASTHEALER", "HUNGER3" ],
+    "traits": [ "CANNIBAL", "FLIMSY", "FASTHEALER", "HUNGER3" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "unarmed" }, { "level": 2, "name": "dodge" } ],
     "items": { "both": [ "shorts", "nec_ribbon" ] }
   },
