@@ -1,5 +1,6 @@
 [
   {
+    "//": "idk wth this mutation even is. I'm not removing this thing but i'm keeping this thing off for now.",
     "type": "mutation",
     "id": "NEC_OTOKONOKO",
     "name": { "ctxt": "otokonoko", "str": "Trap" },

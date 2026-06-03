@@ -10,7 +10,7 @@
     "static_buffs": [
       {
         "id": "nec_kung_fu_breath",
-        "name": { "str": "Kung fu breath" },
+        "name": "Kung fu breath",
         "description": "You can always keep calm by a unique breathing method. Bonus for avoidance and blow",
         "unarmed_allowed": true,
         "mult_bonuses": [ { "stat": "damage", "type": "bash", "scale": 1.1 } ],
@@ -20,7 +20,7 @@
     "onmove_buffs": [
       {
         "id": "nec_kung_fu_move",
-        "name": { "str": "Kung fu move" },
+        "name": "Kung fu move",
         "description": "Using footwork you can always turn to attack and avoid. Bonus to hit and avoid",
         "unarmed_allowed": true,
         "melee_allowed": true,
@@ -32,7 +32,7 @@
     "ondodge_buffs": [
       {
         "id": "nec_kung_fu_dodge",
-        "name": { "str": "Kung fu dodge" },
+        "name": "Kung fu dodge",
         "description": "The moment of avoiding the attack is not necessarily a chance. Always hear the gap of counterattack. Bonus for avoidance and blow. Duplicate possible",
         "unarmed_allowed": true,
         "melee_allowed": true,
