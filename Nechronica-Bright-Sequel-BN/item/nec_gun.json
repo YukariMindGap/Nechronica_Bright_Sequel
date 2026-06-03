@@ -7,7 +7,7 @@
     "description": "A home-made shotgun made from four shotgun barrels joined together. It has four times the power of a single pipe shotgun. Rumor says that the first person to craft this... thing was inspired by a movie about Australian undead.",
     "clip_size": 4,
     "modes": [ [ "DEFAULT", "single", 1 ], [ "DOUBLE", "double", 2 ], [ "QUAD", "quad", 4 ] ],
-    "relative": { "weight": "1000 g", "volume": "500 ml", "price": "100 USD" },
+    "relative": { "weight": "1000 g", "volume": "500 ml", "price": "100 USD", "price_postapoc": "50 USD" },
     "barrel_volume": "1000 ml",
     "valid_mod_locations": [
       [ "accessories", 2 ],
