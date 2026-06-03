@@ -2,7 +2,7 @@
   {
     "type": "mutation",
     "id": "NEC_OTOKONOKO",
-    "name": "Trap",
+    "name": { "ctxt": "otokonoko", "str": "Trap" },
     "points": 0,
     "description": "Your body is a young girl, but you also have male features. Although it is rare, it will not be useful any longer.",
     "starting_trait": true,
@@ -11,10 +11,9 @@
   {
     "type": "mutation",
     "id": "THRESH_NECROMANTIC",
-    "name": "Undead",
+    "name": { "ctxt": "mutation", "str": "Undead" },
     "points": 1,
     "description": "The collapsed body is broken and patchy. Even if it breaks, you can simply reattach the parts.",
-    "valid": false,
     "purifiable": false,
     "threshold": true
   },
@@ -61,12 +60,18 @@
   {
     "type": "mutation",
     "copy-from": "ACIDPROOF",
-    "extend": { "threshreq": [ "THRESH_INSECT", "THRESH_CHIMERA", "THRESH_MEDICAL", "THRESH_SLIME", "THRESH_NECROMANTIC" ], "category": [ "INSECT", "CHIMERA", "MEDICAL", "SLIME", "NECROMANTIC" ] }
+    "extend": {
+      "threshreq": [ "THRESH_INSECT", "THRESH_CHIMERA", "THRESH_MEDICAL", "THRESH_SLIME", "THRESH_NECROMANTIC" ],
+      "category": [ "INSECT", "CHIMERA", "MEDICAL", "SLIME", "NECROMANTIC" ]
+    }
   },
   {
     "type": "mutation",
     "copy-from": "ACIDBLOOD",
-    "extend": { "threshreq": [ "THRESH_INSECT", "THRESH_CHIMERA", "THRESH_MEDICAL", "THRESH_SLIME", "THRESH_NECROMANTIC" ], "category": [ "INSECT", "CHIMERA", "MEDICAL", "SLIME", "NECROMANTIC" ] }
+    "extend": {
+      "threshreq": [ "THRESH_INSECT", "THRESH_CHIMERA", "THRESH_MEDICAL", "THRESH_SLIME", "THRESH_NECROMANTIC" ],
+      "category": [ "INSECT", "CHIMERA", "MEDICAL", "SLIME", "NECROMANTIC" ]
+    }
   },
   {
     "type": "mutation",
@@ -76,12 +81,18 @@
   {
     "type": "mutation",
     "copy-from": "EATPOISON",
-    "extend": { "threshreq": [ "THRESH_TROGLOBITE", "THRESH_CHIMERA", "THRESH_RAPTOR", "THRESH_RAT", "THRESH_MOUSE", "THRESH_NECROMANTIC" ], "category": [ "TROGLOBITE", "RAPTOR", "RAT", "CHIMERA", "NECROMANTIC" ] }
+    "extend": {
+      "threshreq": [ "THRESH_TROGLOBITE", "THRESH_CHIMERA", "THRESH_RAPTOR", "THRESH_RAT", "THRESH_MOUSE", "THRESH_NECROMANTIC" ],
+      "category": [ "TROGLOBITE", "RAPTOR", "RAT", "CHIMERA", "NECROMANTIC" ]
+    }
   },
   {
     "type": "mutation",
     "copy-from": "EATDEAD",
-    "extend": { "threshreq": [ "THRESH_CHIMERA", "THRESH_RAT", "THRESH_MOUSE", "THRESH_NECROMANTIC" ], "category": [ "RAT", "CHIMERA", "MOUSE", "NECROMANTIC" ] }
+    "extend": {
+      "threshreq": [ "THRESH_CHIMERA", "THRESH_RAT", "THRESH_MOUSE", "THRESH_NECROMANTIC" ],
+      "category": [ "RAT", "CHIMERA", "MOUSE", "NECROMANTIC" ]
+    }
   },
   {
     "type": "mutation",
@@ -146,55 +157,51 @@
   {
     "type": "mutation",
     "id": "NEC_ADD_EYE",
-    "name": "Extra Eyes",
+    "name": { "str": "Extra Eyes" },
     "points": 1,
     "visibility": 2,
     "ugliness": 7,
     "description": "A new eye came out of your body. The field of view broadens, but the appearance is disgusting. Perception + 2",
     "category": [ "NECROMANTIC" ],
-    "valid": false,
     "passive_mods": { "per_mod": 2 }
   },
   {
     "type": "mutation",
     "id": "NEC_ADD_ARM",
-    "name": "Extra Arms",
+    "name": { "str": "Extra Arms" },
     "points": 3,
     "visibility": 8,
     "ugliness": 5,
     "description": "You no longer have just two arms. There are additional arms on your shoulder. It is hard to master, but you may expand your range of tactics. Dex + 2",
     "category": [ "NECROMANTIC" ],
-    "valid": false,
     "passive_mods": { "dex_mod": 2 }
   },
   {
     "type": "mutation",
     "id": "NEC_ADD_LEG",
-    "name": "Extra legs",
+    "name": { "str": "Extra legs" },
     "points": 3,
     "visibility": 4,
     "ugliness": 5,
     "description": "You now have more than two legs. Another pair of legs are growing from your waist. You will not be able to equip usual leg protection, but you can move fast.",
     "category": [ "NECROMANTIC" ],
     "restricts_gear": [ "leg_l", "leg_r" ],
-    "passive_mods": { "dex_mod": 2 },
-    "valid": false
+    "passive_mods": { "dex_mod": 2 }
   },
   {
     "type": "mutation",
     "id": "NEC_OOANA",
-    "name": "Large Hole",
+    "name": { "str": "Large Hole" },
     "points": 0,
     "visibility": 3,
     "ugliness": 2,
     "description": "There is a big hole in your body. However, there is no hindrance to battle, and the person who saw it is a little surprised.",
-    "category": [ "NECROMANTIC" ],
-    "valid": false
+    "category": [ "NECROMANTIC" ]
   },
   {
     "type": "mutation",
     "id": "NEC_HORNS",
-    "name": "Horns",
+    "name": { "str": "Horns" },
     "points": -2,
     "visibility": 5,
     "ugliness": 3,
@@ -212,7 +219,7 @@
   {
     "type": "mutation",
     "id": "NEC_TONGUE",
-    "name": "Elongated Tongue",
+    "name": { "str": "Elongated Tongue" },
     "points": 0,
     "visibility": 1,
     "ugliness": 1,
@@ -223,7 +230,7 @@
   {
     "type": "mutation",
     "id": "NEC_TONGUE2",
-    "name": "Prehensile Tongue",
+    "name": { "str": "Prehensile Tongue" },
     "points": 2,
     "visibility": 4,
     "ugliness": 4,
@@ -244,7 +251,7 @@
   {
     "type": "mutation",
     "id": "NEC_FAILED",
-    "name": "Failing",
+    "name": { "str": "Failing" },
     "points": -2,
     "visibility": 4,
     "ugliness": 4,
@@ -263,13 +270,12 @@
       [ "foot_l", 3 ],
       [ "foot_r", 3 ]
     ],
-    "armor": [ { "parts": "ALL", "bash": -3, "cut": -3 } ],
-    "valid": false
+    "armor": [ { "parts": "ALL", "bash": -3, "cut": -3 } ]
   },
   {
     "type": "mutation",
     "id": "NEC_WINGS",
-    "name": "Torn Membrane",
+    "name": { "str": "Torn Membrane" },
     "points": 5,
     "visibility": 12,
     "ugliness": 6,
@@ -289,7 +295,7 @@
   {
     "type": "mutation",
     "id": "NEC_ADD_HEAD",
-    "name": "Extra Head",
+    "name": { "str": "Extra Head" },
     "points": 7,
     "visibility": 15,
     "ugliness": 10,
@@ -302,7 +308,7 @@
   {
     "type": "mutation",
     "id": "NEC_RUPTURE",
-    "name": "Crumbling",
+    "name": { "str": "Crumbling" },
     "points": -5,
     "visibility": 6,
     "ugliness": 8,
@@ -323,13 +329,12 @@
       [ "foot_l", 5 ],
       [ "foot_r", 5 ]
     ],
-    "armor": [ { "parts": "ALL", "bash": -6, "cut": -6 } ],
-    "valid": false
+    "armor": [ { "parts": "ALL", "bash": -6, "cut": -6 } ]
   },
   {
     "type": "mutation",
     "id": "NEC_PATCH",
-    "name": "Patchwork",
+    "name": { "str": "Patchwork" },
     "points": 7,
     "visibility": 8,
     "ugliness": 5,
@@ -349,7 +354,6 @@
       [ "foot_l", -10 ],
       [ "foot_r", -10 ]
     ],
-    "armor": [ { "parts": "ALL", "bash": -2, "cut": -4 } ],
-    "valid": false
+    "armor": [ { "parts": "ALL", "bash": -2, "cut": -4 } ]
   }
 ]

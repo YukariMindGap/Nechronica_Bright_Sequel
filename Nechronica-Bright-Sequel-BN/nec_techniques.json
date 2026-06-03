@@ -1,19 +1,8 @@
 [
   {
     "type": "technique",
-    "id": "WRAP",
-    "name": "Wrap Attack",
-    "skill_requirements": [ { "name": "unarmed", "level": 0 } ],
-    "unarmed_allowed": true,
-    "melee_allowed": true,
-    "stun_dur": 2,
-    "messages": [ "You wrap up %s", "<npcname> wraps up %s" ]
-  },
-  {
-    "//": "",
-    "type": "technique",
     "id": "tec_nec_hakkei",
-    "name": "Kung-fu below",
+    "name": { "str": "Kung-fu below" },
     "skill_requirements": [ { "name": "melee", "level": 2 } ],
     "unarmed_allowed": true,
     "crit_tec": true,
@@ -24,7 +13,7 @@
   {
     "type": "technique",
     "id": "tec_nec_senpukyaku",
-    "name": "Whirlwind Feet",
+    "name": { "str": "Whirlwind Feet" },
     "skill_requirements": [ { "name": "unarmed", "level": 4 } ],
     "dodge_counter": true,
     "unarmed_allowed": true,
@@ -37,7 +26,7 @@
   {
     "type": "technique",
     "id": "tec_nec_tetsuzanko",
-    "name": "Iron Mine",
+    "name": { "str": "Iron Mine" },
     "skill_requirements": [ { "name": "melee", "level": 6 } ],
     "unarmed_allowed": true,
     "req_buffs": [ "nec_kung_fu_dodge" ],
