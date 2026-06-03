@@ -35,7 +35,7 @@
     "subcategory": "CSC_WEAPON_CUTTING",
     "skill_used": "fabrication",
     "difficulty": 7,
-    "time": "120 m",
+    "time": "8 h",
     "autolearn": true,
     "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "CHISEL", "level": 3 } ],
     "tools": [ [ [ "swage", -1 ] ], [ [ "soldering_iron", 20 ], [ "toolset", 20 ] ] ],
@@ -61,16 +61,10 @@
     "subcategory": "CSC_WEAPON_CUTTING",
     "skill_used": "fabrication",
     "difficulty": 10,
-    "time": "480 m",
+    "time": "8 h",
     "book_learn": [ [ "textbook_weapeast", 8 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [ [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 500 ], [ "oxy_torch", 100 ] ] ],
-    "components": [
-      [ [ "steel_lump", 2 ], [ "steel_chunk", 8 ], [ "scrap", 24 ] ],
-      [ [ "2x4", 2 ], [ "stick", 4 ] ],
-      [ [ "fur", 2 ], [ "leather", 2 ] ],
-      [ [ "charcoal", 5 ], [ "coal_lump", 5 ] ]
-    ]
+    "using": [ [ "blacksmithing_standard", 8 ], [ "steel_standard", 2 ] ],
+    "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "fur", 2 ], [ "leather", 2 ] ] ]
   },
   {
     "type": "recipe",
@@ -79,15 +73,9 @@
     "subcategory": "CSC_WEAPON_BASHING",
     "skill_used": "fabrication",
     "difficulty": 7,
-    "time": "240 m",
+    "time": "4 h",
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ],
-      [ [ "forge", 300 ], [ "oxy_torch", 60 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 8 ], [ "steel_standard", 2 ] ],
     "components": [
       [ [ "steel_lump", 3 ], [ "steel_chunk", 12 ], [ "scrap", 32 ] ],
       [ [ "chain", 1 ] ],
@@ -101,7 +89,7 @@
     "subcategory": "CSC_WEAPON_CUTTING",
     "skill_used": "fabrication",
     "difficulty": 8,
-    "time": "440 m",
+    "time": "6 h",
     "autolearn": true,
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
     "tools": [
@@ -185,7 +173,7 @@
     "skill_used": "fabrication",
     "difficulty": 6,
     "skills_required": [ "melee", 3 ],
-    "time": "30 m",
+    "time": "1 h",
     "decomp_learn": 4,
     "book_learn": [
       [ "book_icef", 3 ],
@@ -209,7 +197,7 @@
     "time": "30 m",
     "autolearn": true,
     "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
-    "components": [ [ [ "pipe_double_shotgun", 4 ] ], [ [ "2x4", 2 ] ], [ [ "steel_chunk", 3 ], [ "scrap", 9 ] ] ]
+    "components": [ [ [ "pipe_double_shotgun", 2 ], [ "pipe_shotgun", 4 ] ], [ [ "2x4", 2 ] ], [ [ "steel_chunk", 3 ], [ "scrap", 9 ] ] ]
   },
   {
     "type": "recipe",
@@ -244,11 +232,11 @@
     "subcategory": "CSC_ARMOR_SUIT",
     "skill_used": "tailor",
     "difficulty": 5,
-    "time": "250 m",
+    "time": "3 h 30 m",
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "SEW", "level": 1 }, { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "rag", 30 ] ], [ [ "nec_ribbon", 5 ] ] ]
+    "using": [ [ "sewing_standard", 30 ] ],
+    "components": [ [ [ "nec_ribbon", 2 ] ] ]
   },
   {
     "type": "recipe",
@@ -260,8 +248,8 @@
     "time": "60 m",
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "SEW", "level": 1 }, { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "rag", 3 ] ], [ [ "nec_ribbon", 2 ] ] ]
+    "using": [ [ "sewing_standard", 3 ] ],
+    "components": [ [ [ "nec_ribbon", 2 ] ] ]
   },
   {
     "type": "recipe",
@@ -271,15 +259,13 @@
     "skill_used": "tailor",
     "skills_required": [ "fabrication", 5 ],
     "difficulty": 7,
-    "time": "150 m",
+    "time": "2 h 30 m",
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "SEW", "level": 1 }, { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "welder", 30 ], [ "soldering_iron", 30 ], [ "toolset", 30 ] ] ],
+    "using": [ [ "sewing_standard", 30 ] ],
     "components": [
       [ [ "nec_gothic_dress", 1 ] ],
       [ [ "nec_panier", 1 ] ],
-      [ [ "chestrig", 1 ], [ "vest", 1 ], [ "tool_belt", 2 ] ],
       [
         [ "legrig", 1 ],
         [ "ragpouch", 2 ],
@@ -289,8 +275,27 @@
         [ "fanny", 1 ]
       ],
       [ [ "back_holster", 1 ] ],
-      [ [ "duct_tape", 150 ] ],
-      [ [ "kevlar", 1 ], [ "modularvest", 1 ], [ "swat_armor", 1 ], [ "kevlar_plate", 16 ] ]
+      [ [ "duct_tape", 150 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "nec_mgothic_dress",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "skills_required": [ "fabrication", 5 ],
+    "difficulty": 8,
+    "time": "3 h",
+    "reversible": false,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 30 ] ],
+    "components": [
+      [ [ "nec_gothic_dress", 1 ] ],
+      [ [ "nec_panier", 1 ] ],
+      [ [ "duct_tape", 200 ] ],
+      [ [ "kevlar_plate", 12 ] ],
+      [ [ "modularvest", 1 ] ]
     ]
   },
   {
@@ -308,36 +313,27 @@
   },
   {
     "type": "recipe",
-    "result": "mutagen_necromancy",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "skills_required": [ "firstaid", 1 ],
-    "difficulty": 9,
-    "time": "45 m",
-    "batch_time_factors": [ 80, 20 ],
-    "book_learn": [ [ "NEC_recipe_necromancy", 8 ] ],
-    "qualities": [ { "id": "CHEM", "level": 3 }, { "id": "SEPARATE", "level": 1 }, { "id": "ANALYSIS", "level": 1 } ],
-    "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
-    "components": [
-      [ [ "mutagen", 1 ] ],
-      [ [ "human_flesh", 4 ], [ "mutant_human_flesh", 2 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 100 ] ]
-    ]
+    "result": "nec_African_throwing_knife",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "3 h",
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 300 ], [ "oxy_torch", 60 ] ] ],
+    "components": [ [ [ "steel_lump", 2 ], [ "steel_chunk", 8 ], [ "scrap", 24 ] ], [ [ "2x4", 2 ], [ "stick", 4 ] ] ]
   },
   {
     "type": "recipe",
-    "result": "iv_mutagen_necromancy",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "skills_required": [ "firstaid", 3 ],
-    "difficulty": 10,
-    "time": "2 h",
-    "batch_time_factors": [ 20, 5 ],
-    "book_learn": [ [ "NEC_recipe_necromancy", 9 ] ],
-    "qualities": [ { "id": "CHEM", "level": 3 }, { "id": "FINE_DISTILL", "level": 1 }, { "id": "CONCENTRATE", "level": 1 } ],
-    "tools": [ [ [ "surface_heat", 37, "LIST" ] ] ],
-    "components": [ [ [ "mutagen_necromancy", 2 ] ] ]
+    "result": "nec_boots_sheath",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "1 h",
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 }, { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "boots", 1 ] ], [ [ "blade", 2 ] ], [ [ "superglue", 4 ] ] ]
   }
 ]

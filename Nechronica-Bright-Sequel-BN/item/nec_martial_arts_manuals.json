@@ -5,6 +5,7 @@
     "type": "GENERIC",
     "name": { "str": "Kung Fu for Dummies" },
     "description": "A complete guide to Kung Fu.",
+    "book_data": { "martial_art": "style_nec_kung_fu" },
     "looks_like": "manual_aikido"
   }
 ]
