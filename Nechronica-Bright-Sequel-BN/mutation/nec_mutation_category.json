@@ -2,7 +2,7 @@
   {
     "type": "mutation_category",
     "id": "NECROMANTIC",
-    "name": { "str": "Necromantic" },
+    "name": "Necromantic",
     "threshold_mut": "THRESH_NECROMANTIC",
     "mutagen_message": "Your heart slows down for a beat.",
     "memorial_message": "Failed to realize their full potential.",

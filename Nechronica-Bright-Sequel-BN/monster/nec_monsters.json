@@ -2,10 +2,11 @@
   {
     "id": "mon_nec_ZQ_sama",
     "type": "MONSTER",
-    "name": { "str": "Zombie Queen" },
+    "name": { "str": "zombie queen" },
     "description": "She looks like a beautiful young girl, but in truth she is a queen commanding countless undead.",
-    "species": "ZOMBIE",
     "default_faction": "zombie",
+    "bodytype": "human",
+    "species": [ "ZOMBIE", "HUMAN" ],
     "symbol": "Q",
     "color": "dark_gray",
     "diff": 20,
@@ -28,27 +29,18 @@
     "special_attacks": [ [ "RESURRECT", 10 ], [ "UPGRADE", 10 ], [ "TENTACLE", 5 ], [ "PARROT", 3 ] ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_ZQ_death_drops", 100 ], [ "default_ZQrare_death_drops", 100 ] ] },
     "regenerates": 10,
-    "burn_into": "mon_nec_ZQ_sama",
+    "burn_into": "mon_nec_ZQ_chang",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE" ],
-    "flags": [
-      "SEES",
-      "HEARS",
-      "SMELLS",
-      "WARM",
-      "BASHES",
-      "NO_BREATHE",
-      "REVIVES",
-      "AVOID_DANGER_2",
-      "PRIORITIZE_TARGETS"
-    ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "NO_BREATHE", "REVIVES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ]
   },
   {
     "id": "mon_nec_ZQ_chang",
     "type": "MONSTER",
-    "name": { "str": "Zombie Queen" },
+    "name": { "str": "little zombie queen" },
     "description": "She looks like a beautiful young girl, but in truth...?",
-    "species": "ZOMBIE",
     "default_faction": "zombie",
+    "bodytype": "human",
+    "species": [ "ZOMBIE" ],
     "symbol": "Q",
     "color": "dark_gray",
     "hp": 200,
@@ -69,26 +61,16 @@
     "death_drops": "default_ZQ_death_drops",
     "burn_into": "mon_zombie_scorched",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
-    "flags": [
-      "SEES",
-      "HEARS",
-      "SMELLS",
-      "STUMBLES",
-      "WARM",
-      "BASHES",
-      "POISON",
-      "NO_BREATHE",
-      "REVIVES",
-      "PRIORITIZE_TARGETS"
-    ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "PRIORITIZE_TARGETS" ]
   },
   {
     "id": "mon_nec_banshee",
     "type": "MONSTER",
     "name": { "str": "Banshee" },
     "description": "She was once like a young girl, but now her ego has crumbled and she spreads madness around her.",
-    "species": [ "ZOMBIE" ],
     "default_faction": "zombie",
+    "bodytype": "human",
+    "species": [ "ZOMBIE" ],
     "hp": 60,
     "speed": 80,
     "material": [ "flesh" ],
@@ -98,7 +80,6 @@
     "morale": 100,
     "melee_skill": 2,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
-    "armor_elec": 1,
     "dodge": 2,
     "vision_day": 30,
     "vision_night": 3,
@@ -120,6 +101,7 @@
     "name": { "str": "Nemesis" },
     "description": "Though she appears to be a young girl, she is a monster wielding weapons with clearly superhuman speed and strength. There is no doubt she is an individual enhanced by blasphemous technology.",
     "default_faction": "zombie",
+    "bodytype": "human",
     "species": [ "ZOMBIE" ],
     "hp": 200,
     "speed": 125,
@@ -129,10 +111,7 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
-    "melee_damage": [
-      { "damage_type": "bash", "amount": 20 },
-      { "damage_type": "cut", "amount": 6 }
-    ],
+    "melee_damage": [ { "damage_type": "bash", "amount": 20 }, { "damage_type": "cut", "amount": 6 } ],
     "armor_bash": 2,
     "armor_cut": 3,
     "armor_bullet": 3,
@@ -154,7 +133,7 @@
       "NO_BREATHE",
       "REVIVES",
       "PUSH_MON",
-      "AVOID_DANGER_1"
+      "PATH_AVOID_DANGER_1"
     ]
   },
   {
@@ -163,6 +142,7 @@
     "name": { "str": "Valkyrie" },
     "description": "A being subjected to such blasphemous mechanical modification that barely any trace of the human form remains. She has no legs, floating instead on something resembling a floater.",
     "default_faction": "science",
+    "bodytype": "human",
     "species": [ "ZOMBIE" ],
     "hp": 200,
     "speed": 105,
@@ -172,10 +152,7 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
-    "melee_damage": [
-      { "damage_type": "bash", "amount": 24 },
-      { "damage_type": "cut", "amount": 2 }
-    ],
+    "melee_damage": [ { "damage_type": "bash", "amount": 24 }, { "damage_type": "cut", "amount": 2 } ],
     "armor_bash": 10,
     "armor_cut": 16,
     "armor_bullet": 12,
@@ -194,6 +171,7 @@
     "name": { "str": "Hiruko" },
     "description": "It looks human, but its limbs have been severed and replaced with hook-like attachments. It seems to have high regenerative abilities, but its eye sockets are hollow and it appears to lack eyesight.",
     "default_faction": "zombie",
+    "bodytype": "human",
     "species": [ "ZOMBIE" ],
     "diff": 2,
     "hp": 150,
@@ -204,10 +182,7 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 4,
-    "melee_damage": [
-      { "damage_type": "bash", "amount": 16 },
-      { "damage_type": "cut", "amount": 3 }
-    ],
+    "melee_damage": [ { "damage_type": "bash", "amount": 16 }, { "damage_type": "cut", "amount": 3 } ],
     "vision_night": 1,
     "harvest": "zombie",
     "luminance": 20,
@@ -223,6 +198,7 @@
     "name": { "str": "Sacrifice" },
     "description": "A monster with the upper body of a faceless girl fused to the lower body of an animal. It looks sturdy, but its movements are sluggish and it doesn't seem very aggressive.",
     "default_faction": "zombie",
+    "bodytype": "human",
     "species": [ "ZOMBIE" ],
     "diff": 2,
     "hp": 200,
@@ -233,10 +209,7 @@
     "aggression": 50,
     "morale": 100,
     "melee_skill": 1,
-    "melee_damage": [
-      { "damage_type": "bash", "amount": 3 },
-      { "damage_type": "cut", "amount": 1 }
-    ],
+    "melee_damage": [ { "damage_type": "bash", "amount": 3 }, { "damage_type": "cut", "amount": 1 } ],
     "vision_night": 1,
     "harvest": "zombie",
     "luminance": 20,
@@ -255,7 +228,7 @@
       "NO_BREATHE",
       "REVIVES",
       "PUSH_MON",
-      "AVOID_DANGER_1"
+      "PATH_AVOID_DANGER_1"
     ]
   }
 ]
