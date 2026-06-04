@@ -117,7 +117,7 @@
     "skills": [ { "level": 2, "name": "launcher" } ],
     "items": {
       "both": {
-        "items": [ "socks", "sneakers", "jacket_windbreaker", "tshirt", "backpack" ],
+        "items": [ "socks", "sneakers", "jacket_windbreaker", "tshirt", "shorts_cargo", "backpack" ],
         "entries": [ { "item": "40x46mm_m433", "charges": 4 }, { "item": "launcher_simple", "ammo-item": "40x46mm_m433", "charges": 1 } ]
       },
       "male": [ "boxer_shorts" ],
