@@ -9,5 +9,7 @@ The difference between the old fork and this one is that this mod will mainly be
 WIP while i think of what to put here.
 
 Credits:
+
 Malkeus: Making the original Compatible Nechronica on their (now-deleted) github repo.
+
 Yunde: For making the 2nd version of the original Japanese Nechronica mod.
