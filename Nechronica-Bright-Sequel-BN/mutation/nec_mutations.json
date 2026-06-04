@@ -1,17 +1,24 @@
 [
   {
-    "//": "生い立ちがキャラ生成後に残らないので黄特質としてポジションを用意しておく",
+    "//": "----------------DOLL Position Traits----------------",
+    "type": "mutation_type",
+    "id": "nec_doll_position",
+    "swap_on_conflict": true
+  },
+  {
+    "//": "These traits don't do anything ATM",
     "type": "mutation",
     "id": "nec_Alice_MT",
-    "name": "Alice",
+    "name": "Position: Alice",
     "description": "Yourself, unchanged in a world where everything has changed. Was it tranquility, or was it escape?",
     "points": 0,
     "starting_trait": true,
     "purifiable": false,
-    "valid": false
+    "valid": false,
+    "types": [ "nec_doll_position" ]
   },
   {
-    "//": "生い立ちがキャラ生成後に残らないので黄特質としてポジションを用意しておく",
+    "//": "In source, these are more like the Doll's personality. I still have no idea how to implement that here.",
     "type": "mutation",
     "id": "nec_Holic_MT",
     "name": "Holic",
@@ -19,7 +26,8 @@
     "points": 0,
     "starting_trait": true,
     "purifiable": false,
-    "valid": false
+    "valid": false,
+    "types": [ "nec_doll_position" ]
   },
   {
     "//": "生い立ちがキャラ生成後に残らないので黄特質としてポジションを用意しておく",
@@ -30,7 +38,8 @@
     "points": 0,
     "starting_trait": true,
     "purifiable": false,
-    "valid": false
+    "valid": false,
+    "types": [ "nec_doll_position" ]
   },
   {
     "//": "生い立ちがキャラ生成後に残らないので黄特質としてポジションを用意しておく",
@@ -41,7 +50,8 @@
     "points": 0,
     "starting_trait": true,
     "purifiable": false,
-    "valid": false
+    "valid": false,
+    "types": [ "nec_doll_position" ]
   },
   {
     "//": "生い立ちがキャラ生成後に残らないので黄特質としてポジションを用意しておく",
@@ -52,7 +62,8 @@
     "points": 0,
     "starting_trait": true,
     "purifiable": false,
-    "valid": false
+    "valid": false,
+    "types": [ "nec_doll_position" ]
   },
   {
     "//": "生い立ちがキャラ生成後に残らないので黄特質としてポジションを用意しておく",
@@ -63,7 +74,8 @@
     "points": 0,
     "starting_trait": true,
     "purifiable": false,
-    "valid": false
+    "valid": false,
+    "types": [ "nec_doll_position" ]
   },
   {
     "type": "mutation",
@@ -202,7 +214,6 @@
     "ugliness": 7,
     "description": "A new eye has emerged from your body. Your field of vision widens, but it looks quite unsettling. Perception +2",
     "category": [ "NECROMANTIC" ],
-    "valid": false,
     "passive_mods": { "per_mod": 2 }
   },
   {
@@ -214,7 +225,6 @@
     "ugliness": 5,
     "description": "You don't have just two arms. There are extra arms growing from your shoulders. They're hard to control, but they might broaden your tactical options. Strength +1, Dexterity +2",
     "category": [ "NECROMANTIC" ],
-    "valid": false,
     "passive_mods": { "dex_mod": 2 },
     "attacks": {
       "attack_text_u": "You punch %s with your extra arm",
@@ -234,8 +244,7 @@
     "description": "You don't have just two legs. Another pair of legs grows from your waist. With practice, you can move faster. Dexterity +2, speed bonus.",
     "category": [ "NECROMANTIC" ],
     "passive_mods": { "dex_mod": 2 },
-    "enchantments": [ "NEC_ADD_LEG_SPEED" ],
-    "valid": false
+    "enchantments": [ "NEC_ADD_LEG_SPEED" ]
   },
   {
     "type": "mutation",
@@ -245,8 +254,7 @@
     "visibility": 3,
     "ugliness": 2,
     "description": "You have a large gaping defect in your body. It doesn't hinder combat, but it shocks anyone who sees it.",
-    "category": [ "NECROMANTIC" ],
-    "valid": false
+    "category": [ "NECROMANTIC" ]
   },
   {
     "type": "mutation",
@@ -304,9 +312,10 @@
     "points": 2,
     "visibility": 4,
     "ugliness": 4,
+    "description": "Your tongue drips with viscous drool. You can't equip anything on your mouth, but the tongue itself will serve as a surprise attack.",
+    "valid": false,
     "prereqs": [ "NEC_TONGUE" ],
     "cancels": [ "BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MANDIBLES", "MUZZLE_LONG", "MUZZLE", "MINOTAUR" ],
-    "description": "Your tongue drips with viscous drool. You can't equip anything on your mouth, but the tongue itself will serve as a surprise attack.",
     "category": [ "NECROMANTIC" ],
     "restricts_gear": [ "mouth" ],
     "attacks": {
@@ -346,8 +355,7 @@
         "bash": -3,
         "cut": -3
       }
-    ],
-    "valid": false
+    ]
   },
   {
     "//": "----------------Threshold Stuff----------------",
@@ -357,8 +365,9 @@
     "points": 5,
     "visibility": 12,
     "ugliness": 6,
-    "threshreq": [ "THRESH_NECROMANTIC" ],
+    "valid": false,
     "description": "A membrane of corpse flesh, the wings of a corpse angel. You can't fly, but the fleshy wings enveloping your body serve as armor against attacks.",
+    "threshreq": [ "THRESH_NECROMANTIC" ],
     "prereqs": [ "WINGS_STUB" ],
     "cancels": [ "WINGS_BIRD", "WINGS_INSECT", "WINGS_BUTTERFLY" ],
     "category": [ "NECROMANTIC" ],
@@ -390,8 +399,9 @@
     "points": -5,
     "visibility": 6,
     "ugliness": 8,
+    "valid": false,
+    "description": "Your body is falling apart at its seams. Your encumbrance increases further and your defenses decrease.",
     "threshreq": [ "THRESH_NECROMANTIC" ],
-    "description": "Your body is falling apart at its seamed. Your encumbrance increases further and your defenses decrease.",
     "changes_to": [ "NEC_PATCH" ],
     "prereqs": [ "NEC_FAILED" ],
     "category": [ "NECROMANTIC" ],
@@ -413,8 +423,7 @@
         "bash": -6,
         "cut": -6
       }
-    ],
-    "valid": false
+    ]
   },
   {
     "type": "mutation",
@@ -423,6 +432,7 @@
     "points": 7,
     "visibility": 8,
     "ugliness": 5,
+    "valid": false,
     "description": "Your body has stabilized to a lattice of black threads. You become slightly more vulnerable to attacks, but your encumbrance is greatly reduced overall.",
     "category": [ "NECROMANTIC" ],
     "threshreq": [ "THRESH_NECROMANTIC" ],
@@ -445,8 +455,7 @@
         "bash": -2,
         "cut": -4
       }
-    ],
-    "valid": false
+    ]
   },
   {
     "type": "mutation",
