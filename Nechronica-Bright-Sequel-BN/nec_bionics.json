@@ -24,7 +24,7 @@
     "id": "bio_remote_attack",
     "name": { "str": "Remote Attack" },
     "occupied_bodyparts": [ [ "arm_l", 10 ], [ "arm_r", 10 ], [ "leg_l", 10 ], [ "leg_r", 10 ] ],
-    "act_cost": "50 kJ",
+    "act_cost": "50 J",
     "flags": [ "BIONIC_GUN", "USES_BIONIC_POWER" ],
     "fake_item": "bio_remote_attack_fake",
     "description": "Detaches your limbs and fires them at the enemy. They automatically return after attacking, so you don't need to worry about missing."
@@ -65,7 +65,7 @@
     "id": "bio_pile",
     "name": { "str": "Pile Bunker" },
     "occupied_bodyparts": [ [ "arm_l", 10 ] ],
-    "act_cost": "200 kJ",
+    "act_cost": "200 J",
     "flags": [ "BIONIC_GUN", "USES_BIONIC_POWER" ],
     "fake_item": "bio_pile_fake",
     "description": "Fires a metal stake stored in the forearm at ultra-high speed with high vibration. You need to close distance, but its power is guaranteed. As is the power consumption."
@@ -103,7 +103,7 @@
     "name": { "str": "Drill Hand" },
     "occupied_bodyparts": [ [ "arm_r", 5 ], [ "hand_r", 2 ] ],
     "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON", "USES_BIONIC_POWER" ],
-    "act_cost": "100 kJ",
+    "act_cost": "100 J",
     "fake_item": "bio_drill_fake",
     "description": "Embeds a drill transformation mechanism from the wrist onward. It consumes power and starts high-speed rotating. You can excavate the ground and zombies alike."
   },
@@ -140,7 +140,7 @@
     "name": { "str": "Lightsaber" },
     "description": "Embeds a mechanism that generates a blade of light in your arm. It becomes a powerful weapon when activated as needed.",
     "occupied_bodyparts": [ [ "arm_r", 5 ], [ "hand_r", 5 ] ],
-    "act_cost": "200 kJ",
+    "act_cost": "200 J",
     "fake_item": "bio_lightsaber_fake",
     "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON", "USES_BIONIC_POWER" ]
   },
