@@ -2,7 +2,7 @@ Nechronica fork.
 Forked from Malkeus's Compatible Nechronica.
 
 What is this mod:
-It's a mod about zombie girls (called Dolls) in a post-apocalyptic world fighting against zombies employed by the Necromancer (the DM). 
+It's a mod about zombie girls (called Dolls) in a post-apocalyptic world fighting against zombies and other monsters employed by the Necromancer (the DM). 
 It features zombie girls, gothic lolita, ridiculous weapons, mutations, bionics, and BOOT SHEATHS.
 There's the Undead Gun, which is basically four double-barrel shotguns combined into one monstrosity of a weapon. 
 There's also combat lawnmowers, the bionic that allows you to rocket punch enemies, sweet mutations that simulate being a cobbled together undead being, zombie queens, and more!
